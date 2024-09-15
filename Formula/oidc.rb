@@ -5,17 +5,17 @@
 class Oidc < Formula
   desc "A simple command line tool to interact with Open ID Connect providers."
   homepage "https://github.com/sk1m/oidc-cli"
-  version "0.0.8"
+  version "0.0.9"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/sk1m/oidc-cli/releases/download/v0.0.8/oidc-cli_Darwin_x86_64.tar.gz",
+      url "https://github.com/sk1m/oidc-cli/releases/download/v0.0.9/oidc-cli_Darwin_x86_64.tar.gz",
         headers: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
         ]
-      sha256 "ffaf26f1e985646873f53493a8729e1a1e45f752dff63180f465d543c1d84d42"
+      sha256 "c6e4d1d93acb5bb2455bdec5d6882b80ea164ad6fddf7ac43731de99d3151771"
 
       def install
         bin.install "oidc"
@@ -25,12 +25,12 @@ class Oidc < Formula
       end
     end
     on_arm do
-      url "https://github.com/sk1m/oidc-cli/releases/download/v0.0.8/oidc-cli_Darwin_arm64.tar.gz",
+      url "https://github.com/sk1m/oidc-cli/releases/download/v0.0.9/oidc-cli_Darwin_arm64.tar.gz",
         headers: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
         ]
-      sha256 "453c7ab227fc95861f1b6b54d4c1fb3eef57acd1826e87b86a2580699f792db2"
+      sha256 "5b251a290499ab55fe76e87cf49066e2275d5c1738ecab4fd8021cc3613d3ba0"
 
       def install
         bin.install "oidc"
@@ -44,12 +44,12 @@ class Oidc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sk1m/oidc-cli/releases/download/v0.0.8/oidc-cli_Linux_x86_64.tar.gz",
+        url "https://github.com/sk1m/oidc-cli/releases/download/v0.0.9/oidc-cli_Linux_x86_64.tar.gz",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
           ]
-        sha256 "3b6eca4606886d90710c689a7c5f5be5fc07f586343eb3c0f7282658be17b37c"
+        sha256 "3cda24ada4f51ff0d52fa8333dd9bebf1822408f0502cbcabf3c79aafbfaf232"
 
         def install
           bin.install "oidc"
@@ -61,12 +61,12 @@ class Oidc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sk1m/oidc-cli/releases/download/v0.0.8/oidc-cli_Linux_arm64.tar.gz",
+        url "https://github.com/sk1m/oidc-cli/releases/download/v0.0.9/oidc-cli_Linux_arm64.tar.gz",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
           ]
-        sha256 "a7e39aa73cfb3aade7ffe4b5db47b80e9420dc8d9824c4768d46781418e103a7"
+        sha256 "b54df853b731cf5c3b07c5dcb7f4035dede53c9b1e2ed5e20cba45fc52011151"
 
         def install
           bin.install "oidc"
